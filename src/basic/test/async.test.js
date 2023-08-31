@@ -27,6 +27,6 @@ describe('Async', () => {
   });
 
   it('async - reject', () => {
-    return expect(fetchProduct()).rejects.toBe('Network Error');
+    return expect(fetchProduct('error')).rejects.toBe('network error');
   });
 });
